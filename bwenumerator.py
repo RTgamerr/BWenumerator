@@ -25,8 +25,5 @@ for i in sub_domains:
     request_sent = requests.get(f"{website}/{i}")
     if request_sent == 404 or "not found":
         print(Fore.RED + f"[-] {i} Sub domain not found in {website}" + Fore.RESET)
-        print(Fore.RESET)
     else:
         print(Fore.GREEN + f"[+] Sub domain was found in {website}" + Fore.RESET)
-        print(Fore.RESET)
-    
